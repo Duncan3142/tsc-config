@@ -1,7 +1,1 @@
-{
-	"semi": false,
-	"trailingComma": "es5",
-	"singleQuote": false,
-	"printWidth": 96,
-	"useTabs": true
-}
+"@duncan3142/prettier-cnfg/.prettierrc.json"

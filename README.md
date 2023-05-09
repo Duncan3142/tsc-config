@@ -22,16 +22,16 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-	<a href="https://github.com/Duncan3142/prettier-cnfg">
+	<a href="https://github.com/Duncan3142/tsc-cnfg">
 		<img src="assets/logo.png" alt="Logo" width="80" height="80">
 	</a>
 
-<h3 align="center">Typescript Template</h3>
+<h3 align="center">Typescript Configuration</h3>
 
 <p align="center">
-	Shared prettier configuration
+	Shared typescript configuration
 	<br />
-	<a href="https://github.com/Duncan3142/prettier-cnfg"><strong>Explore the docs</strong></a>
+	<a href="https://github.com/Duncan3142/tsc-cnfg"><strong>Explore the docs</strong></a>
 </p>
 
 </div>
@@ -67,7 +67,7 @@
 
 ### Installation
 
-Install workspace packages
+Install packages
 
 ```sh
 pnpm i
@@ -87,14 +87,14 @@ Distributed under the MIT License. See [LICENSE.txt](./LICENSE.txt) for more inf
 
 Duncan Giles - duncan3142@gmail.com
 
-Project Link: [https://github.com/Duncan3142/prettier-cnfg](https://github.com/Duncan3142/prettier-cnfg)
+Project Link: [https://github.com/Duncan3142/tsc-cnfg](https://github.com/Duncan3142/tsc-cnfg)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[license-shield]: https://img.shields.io/github/license/Duncan3142/prettier-cnfg.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/Duncan3142/tsc-cnfg.svg?style=for-the-badge
 [license-url]: ./LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/duncan3142
