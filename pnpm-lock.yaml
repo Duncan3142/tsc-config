@@ -13,8 +13,8 @@ devDependencies:
     specifier: ^17.6.3
     version: 17.6.3
   '@duncan3142/prettier-config':
-    specifier: ^1.0.0
-    version: 1.0.0(prettier@2.8.8)
+    specifier: ^1.0.1
+    version: 1.0.1(prettier@2.8.8)
   commitlint:
     specifier: ^17.6.3
     version: 17.6.3
@@ -411,8 +411,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
-  /@duncan3142/prettier-config@1.0.0(prettier@2.8.8):
-    resolution: {integrity: sha512-sfU258cdN38BAuwrfqD1noc7/uwXuf3Uauiw8lufQ6frNj4pplZ9D+yLvCJhCuJ5/4ixSQJTJ15cK3ARm8dAYA==}
+  /@duncan3142/prettier-config@1.0.1(prettier@2.8.8):
+    resolution: {integrity: sha512-arbChcoLT/hYBxrLwYeRFvrmySMsZB7jImz9jvEpFfFnX83bJdFEjqmI/7LQIrlS4KHSboyxZXmTjP4qs3TpjQ==, tarball: https://npm.pkg.github.com/download/@duncan3142/prettier-config/1.0.1/b665a2f9e31be55b69afecbea017ffb07a14440f}
     engines: {node: ^18.0.0, pnpm: ^8.0.0}
     peerDependencies:
       prettier: ^2.0.0
