@@ -13,6 +13,7 @@
 		"moduleResolution": "Node16",
 		"resolveJsonModule": true,
 		"incremental": true,
+		"inlineSources": true,
 		"sourceMap": true,
 		"declaration": true,
 		"declarationMap": true,

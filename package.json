@@ -2,7 +2,7 @@
 	"name": "@duncan3142/tsc-cnfg",
 	"description": "Typescript configuration",
 	"keywords": [],
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "Duncan Giles",
 	"type": "module",
 	"license": "MIT",
