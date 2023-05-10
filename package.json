@@ -2,7 +2,7 @@
 	"name": "@duncan3142/tsc-cnfg",
 	"description": "Typescript configuration",
 	"keywords": [],
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"author": "Duncan Giles",
 	"type": "module",
 	"license": "MIT",
@@ -31,5 +31,8 @@
 		"commitlint": "^17.6.3",
 		"husky": "^8.0.3",
 		"prettier": "^2.8.8"
+	},
+	"dependencies": {
+		"typescript": "^5.0.4"
 	}
 }
