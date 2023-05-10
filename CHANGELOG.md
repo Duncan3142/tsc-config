@@ -1,4 +1,4 @@
-# @duncan3142/tsc-cnfg
+# @duncan3142/tsc-config
 
 ## 1.0.2
 

@@ -1,5 +1,5 @@
 {
-	"name": "@duncan3142/tsc-cnfg",
+	"name": "@duncan3142/tsc-config",
 	"description": "Typescript configuration",
 	"keywords": [],
 	"version": "1.0.2",
@@ -27,7 +27,7 @@
 	"devDependencies": {
 		"@changesets/cli": "^2.26.1",
 		"@commitlint/config-conventional": "^17.6.3",
-		"@duncan3142/prettier-cnfg": "^1.0.0",
+		"@duncan3142/prettier-config": "^1.0.0",
 		"commitlint": "^17.6.3",
 		"husky": "^8.0.3",
 		"prettier": "^2.8.8"
