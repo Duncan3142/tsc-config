@@ -3,7 +3,7 @@
 	"repository": "https://github.com/duncan3142/tsc-config",
 	"description": "Typescript configuration",
 	"keywords": [],
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"author": "Duncan Giles",
 	"type": "module",
 	"license": "MIT",
@@ -18,8 +18,8 @@
 		"tsconfig.json"
 	],
 	"peerDependencies": {
-		"typescript": "^5.0.0",
-		"@types/node": "^18.16.5"
+		"@types/node": "^18.16.5",
+		"typescript": "^5.0.0"
 	},
 	"scripts": {
 		"prepare": "husky install",
@@ -34,6 +34,7 @@
 		"husky": "^8.0.3"
 	},
 	"dependencies": {
+		"@types/node": "^18.16.7",
 		"typescript": "^5.0.4"
 	}
 }
