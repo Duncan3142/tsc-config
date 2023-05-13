@@ -1,5 +1,11 @@
 # @duncan3142/tsc-config
 
+## 1.0.5
+
+### Patch Changes
+
+- 38b3bc0: Publish workflow
+
 ## 1.0.4
 
 ### Patch Changes
