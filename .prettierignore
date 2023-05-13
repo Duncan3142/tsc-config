@@ -13,9 +13,15 @@ node_modules
 # Git
 !.gitignore
 
+# GitHub
+!.github
+
 # NPM
 !.npmrc
 !.npmignore
+
+# NVM
+!.nvmrc
 
 # Prettier
 !.prettierignore

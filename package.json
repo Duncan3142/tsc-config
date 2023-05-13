@@ -8,8 +8,8 @@
 	"type": "module",
 	"license": "MIT",
 	"engines": {
-		"node": "^18.0.0",
-		"pnpm": "^8.0.0"
+		"node": ">=18",
+		"pnpm": ">=8"
 	},
 	"exports": {
 		"./tsconfig.json": "./tsconfig.json"
@@ -22,19 +22,19 @@
 		"typescript": "^5.0.0"
 	},
 	"scripts": {
-		"prepare": "husky install",
+		"prepare": "./.husky/install.sh",
 		"clean": "rm -rf .prettier .package",
 		"format": "prettier --check --cache --cache-location='.prettier/cache' --cache-strategy=content ."
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.26.1",
 		"@commitlint/config-conventional": "^17.6.3",
-		"@duncan3142/prettier-config": "^1.0.1",
+		"@duncan3142/prettier-config": "^1.0.6",
 		"commitlint": "^17.6.3",
 		"husky": "^8.0.3"
 	},
 	"dependencies": {
-		"@types/node": "^18.16.7",
+		"@types/node": "^18.16.9",
 		"typescript": "^5.0.4"
 	}
 }

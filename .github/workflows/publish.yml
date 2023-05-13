@@ -1,0 +1,68 @@
+name: Publish
+
+run-name: Publish
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  packages: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish-required:
+    name: Publish required
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v3
+      - name: Should publish
+        id: should-publish
+        run: |
+          source ./build/should-publish.sh
+          echo "SHOULD_PUBLISH=${SHOULD_PUBLISH}" >> "$GITHUB_OUTPUT"
+    outputs:
+      SHOULD_PUBLISH: ${{ steps.should-publish.outputs.SHOULD_PUBLISH }}
+
+  do-publish:
+    name: Publish
+    needs: publish-required
+    if: needs.publish-required.outputs.SHOULD_PUBLISH == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v3
+      - name: Git Config
+        run: |
+          git config --global user.name "$GITHUB_ACTOR"
+          git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
+      - name: Install PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          check-latest: true
+          node-version-file: ".nvmrc"
+          cache: "pnpm"
+      - name: GitHub Packages installation token
+        run: pnpm config -g set "//npm.pkg.github.com/:_authToken=${PNPM_AUTH_TOKEN}"
+        env:
+          PNPM_AUTH_TOKEN: ${{ secrets.GH_PACKAGES_READ_TOKEN }}
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile --ignore-scripts
+      - name: GitHub Packages publishing token
+        run: pnpm config -g set "//npm.pkg.github.com/:_authToken=${PNPM_AUTH_TOKEN}"
+        env:
+          PNPM_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish package
+        run: ./build/publish.sh
+      - name: Push changes
+        run: git push
