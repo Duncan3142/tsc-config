@@ -2,4 +2,4 @@
 
 pnpm run format
 pnpm changeset version
-pnpm publish
+pnpm publish --access=public
