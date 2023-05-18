@@ -1,5 +1,11 @@
 # @duncan3142/tsc-config
 
+## 1.0.6
+
+### Patch Changes
+
+- 628d80b: Update deps
+
 ## 1.0.5
 
 ### Patch Changes
