@@ -34,7 +34,7 @@
 		"husky": "^8.0.3"
 	},
 	"dependencies": {
-		"@types/node": "^18.16.9",
+		"@types/node": "^18.16.12",
 		"typescript": "^5.0.4"
 	}
 }
