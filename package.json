@@ -3,7 +3,7 @@
 	"repository": "https://github.com/duncan3142/tsc-config",
 	"description": "Typescript configuration",
 	"keywords": [],
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"author": "Duncan Giles",
 	"type": "module",
 	"license": "MIT",
